@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+
+    <style>
+        .feature {
+            font-size: 3rem;
+        }
+
+
+        #contact-details {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+
+        #contact-details .details {
+            width: 40%;
+        }
+
+
+        #contact-details .details span,
+        #form-details form span {
+            font-size: 12px;
+            color: coral;
+        }
+
+
+        #contact-details .details h2,
+        #form-details form h2 {
+            font-size: 26px;
+            line-height: 35px;
+            padding: 20px 0;
+        }
+
+        #contact-details .details h3 {
+            font-size: 15px;
+            padding-bottom: 15px;
+        }
+
+
+        #contact-details .details li {
+            list-style: none;
+            display: flex;
+            padding: 15px 0;
+        }
+
+        #contact-details .details li i {
+            font-size: 14px;
+            padding-top: 5px;
+            padding-right: 30px;
+        }
+
+        #contact-details .details li p {
+            margin: 0;
+            font-size: 14px;
+        }
+
+        #form-details {
+            display: flex;
+            justify-content: space-between;
+            padding: 60px;
+            border: 1px solid #e1e1e1;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+
+        #form-details form {
+            width: 65%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        #form-details form input,
+        #form-details form textarea {
+            width: 100%;
+            padding: 12px 15px;
+            outline: none;
+            margin-bottom: 20px;
+            border: 1px solid rgba(255, 127, 80, 0.455);
+            resize: none;
+        }
+
+        #form-details .people div img {
+            border-radius: 50%;
+            width: 70px;
+            height: 70px;
+            object-fit: cover;
+            margin-right: 15px;
+        }
+
+        #form-details .people div {
+            padding-bottom: 25px;
+            display: flex;
+            align-items: flex-start;
+        }
+
+        #form-details .people div p {
+            margin: 0;
+            font-size: 13px;
+            line-height: 25px;
+        }
+
+        #form-details .people div p span {
+            display: block;
+            font-size: 16px;
+            font-weight: 600;
+            color: black;
+        }
+
+
+        @media (max-width:799px) {
+
+
+            #contact-details {
+                display: flex;
+                flex-direction: column;
+                gap: 40px;
+            }
+
+            #contact-details .details {
+                width: 100%;
+            }
+
+
+
+            #form-details {
+                display: flex;
+                flex-direction: column;
+                box-shadow: none;
+                border: none;
+            }
+
+
+            #form-details form{
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-white py-3 fixed-top">
+        <div class="container">
+            <img src="img/logo1.png" alt="">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span><i id="bar" class="fa-solid fa-bars"></i></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="shop.html">Shop</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </li>
+                    <li class="nav-item">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                    </li>
+
+            </div>
+        </div>
+    </nav>
+
+
+    <section id="featured" class="mt-5 pt-5">
+        <div class="container text-center mt-5 pt-5">
+            <h3 class="feature">Contact US</h3>
+            <hr class="mx-auto">
+        </div>
+    </section>
+
+    <section id="contact-details" class="container p1 py-5">
+        <div class="details">
+            <span>GET IN TOUCH</span>
+            <h2>Viist one of our agency locations or contact us today</h2>
+            <h3>Head Office</h3>
+            <div>
+                <li>
+                    <i class="fa-solid fa-map"></i>
+                    <p>56 Glassford Street Glassgow GI 1UL New York</p>
+                </li>
+                <li>
+                    <i class="fa-regular fa-envelope"></i>
+                    <p>Contact@example.com</p>
+                </li>
+                <li>
+                    <i class="fa-solid fa-phone"></i>
+                    <p>(012)-34567890</p>
+                </li>
+                <li>
+                    <i class="fa-regular fa-clock"></i>
+                    <p>Monday To Saturday: 9.00am to 16.00pm</p>
+                </li>
+            </div>
+        </div>
+        <div class="map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d115806.67186533142!2d66.98614459970857!3d24.899397305536382!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sDolmen%20Mall!5e0!3m2!1sen!2s!4v1760715385725!5m2!1sen!2s"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+
+
+    <section id="form-details" class="container pt-5 pb-0">
+        <form action="">
+            <span>LEAVE A MESSAGE</span>
+            <h2>We love to hear from you</h2>
+            <input type="text" name="" id="" placeholder="Your Name">
+            <input type="email" name="" id="" placeholder="Email">
+            <input type="text" name="" id="" placeholder="Subject">
+            <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+            <button id="shop">Submit</button>
+        </form>
+
+        <div class="people pt-5">
+            <div>
+                <img src="img/contact/1.png" alt="">
+                <p><span>John Doe</span> Senior Marketing Manager <br> Phone: +000 123 000 77 88 <br> Email:
+                    contact@example.com</p>
+            </div>
+            <div>
+                <img src="img/contact/2.png" alt="">
+                <p><span>William</span> Senior Marketing Manager <br> Phone: +000 123 000 77 88 <br> Email:
+                    contact@example.com</p>
+            </div>
+            <div>
+                <img src="img/contact/3.png" alt="">
+                <p><span>Emma Stone</span> Senior Marketing Manager <br> Phone: +000 123 000 77 88 <br> Email:
+                    contact@example.com</p>
+            </div>
+        </div>
+    </section>
+
+
+
+    <footer class="mt-5 py-5">
+        <div class="row container mx-auto pt-5">
+            <div class="footer-one col-lg-3 col-md-6 col-12">
+                <img class="pb-4" src="img/logo2.png" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem quia magni, quisquam odio fuga ipsam?
+                </p>
+            </div>
+            <div class="footer-one col-lg-3 col-md-6 col-12 mb-3">
+                <h5 class="pb-2">Featured</h5>
+                <ul class="text-uppercase list-unstyled">
+                    <li><a href="#">men</a></li>
+                    <li><a href="#">women</a></li>
+                    <li><a href="#">boys</a></li>
+                    <li><a href="#">girls</a></li>
+                    <li><a href="#">new arrivals</a></li>
+                    <li><a href="#">shoes</a></li>
+                    <li><a href="#">clothes</a></li>
+                </ul>
+            </div>
+            <div class="footer-one col-lg-3 col-md-6 col-12 mb-3">
+                <h5 class="pb-2">Contact Us</h5>
+                <div>
+                    <h6 class="text-uppercase">Address</h6>
+                    <p>123 STREET NAME, CITY, US</p>
+                </div>
+                <div>
+                    <h6 class="text-uppercase">Phone</h6>
+                    <p>(123) 456-7890</p>
+                </div>
+                <div>
+                    <h6 class="text-uppercase">Email</h6>
+                    <p>RYMO@GMAIL.COM</p>
+                </div>
+            </div>
+            <div class="footer-one col-lg-3 col-md-6 col-12">
+                <h5 class="pb-2">Instagram</h5>
+                <div class="row">
+                    <img class="img-fluid w-25 h-100 m-1" src="img/insta/1.jpg" alt="">
+                    <img class="img-fluid w-25 h-100 m-1" src="img/insta/2.jpg" alt="">
+                    <img class="img-fluid w-25 h-100 m-1" src="img/insta/3.jpg" alt="">
+                    <img class="img-fluid w-25 h-100 m-1" src="img/insta/4.jpg" alt="">
+                    <img class="img-fluid w-25 h-100 m-1" src="img/insta/5.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="copyright mt-5">
+            <div class="row container mx-auto">.
+                <div class="col-lg-3 col-md-6 col-12 mb-4">
+                    <img src="img/payment.png" alt="">
+                </div>
+                <div class="col-lg-4 col-md-6 col-12 text-nowrap mb-2">
+                    <p>rymo eCommerce &copy; 2021. All Right Reserved</p>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12 text-center">
+                    <a href="https://web.facebook.com/login.php/?_rdc=1&_rdr#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://x.com/i/flow/login?redirect_after_login=%2Fsearch%3Fq%3Dtwitter%2520login"><i
+                            class="fa-brands fa-twitter"></i></a>
+                    <a href="https://www.linkedin.com/login"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+
+
+
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
+        integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
